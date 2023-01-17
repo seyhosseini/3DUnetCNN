@@ -64,6 +64,8 @@
 #Print the end date of the job before exiting
 echo Now it is: `date`
 
+which python3
+
 python3 ../../unet3d/scripts/train.py --config_filename ./brats_config.json --model_filename ./brats_unet3d_baseline.h5 \
 --training_log_filename brats_baseline_training_log.csv --nthreads 20 --ngpus 1 --fit_gpu_mem 2
 
